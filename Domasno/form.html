@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        div {
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="domasno">
+        <div>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="password">Type your password:</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+        <div>
+            <label for="num">Enter Number:</label>
+            <input type="text" name="number" id="num" placeholder="Enter number">
+        </div>
+        <div>
+            <label for="time">Enter your local time:</label>
+            <input type="datetime-local" name="time" id="time">
+        </div>
+        <div>
+            <select name="country" id="country">
+                <option value="" selected disabled>--Select Country--</option>
+                <option value="MKD">Macedonia</option>
+                <option value="SRB">Serbia</option>
+                <option value="AUS">Australia</option>
+                <option value="HRV">Croatia</option>
+                <option value="ITA">Italy</option>
+            </select>
+        </div>
+        <div>
+            <label for="op1">Option 1</label>
+            <input type="checkbox" name="op_1" id="op1">
+            <label for="op2">Option 2</label>
+            <input type="checkbox" name="op_2" id="op2">
+            <label for="op3">Option 3</label>
+            <input type="checkbox" name="op_3" id="op3">
+            <label for="op4">Option 4</label>
+            <input type="checkbox" name="op_4" id="op4">
+        </div>
+        <div>
+            <select name="country" id="country" size="4">
+                <option value="" selected disabled>--Select Country--</option>
+                <option value="AUS">Australia</option>
+                <option value="HRV">Croatia</option>
+                <option value="ITA">Italy</option>
+                <option value="MKD">Macedonia</option>
+                <option value="SRB">Serbia</option>
+            </select>
+        </div>
+        <div>
+            <label for="man">Male</label>
+            <input type="radio" name="sex" id="man">
+            <label for="woman">Female</label>
+            <input type="radio" name="sex" id="woman">
+        </div>
+        <div>
+            <textarea name="fdb" id="feedback" cols="30" rows="" placeholder="Enter your message..."></textarea>
+        </div>
+        <div>
+            <button>Send</button>
+            <input type="button" value="Cancel">
+        </div>
+
+        <table border="1">
+            <tr>
+                <td>Name:</td>
+                <td>"Your Name"</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastName">Last Name:</label>
+                </td>
+                <td><input type="text" name="lastName" id="lastName"></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>"Your Name"</td>
+            </tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="eye"> Eye color:</label>
+                </td>
+                <td>
+                    <select name="eye_color" id="eye">
+                        <option value="" selected disabled>--Choose One--</option>
+                        <option value="brown">Brown</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Check all that apply:</td>
+                <td>
+                    <label for="tall">Over 6 feet tall</label>
+                    <input type="checkbox" name="feet_tall" id="tall">
+                    <label for="pounds">Over 200 pounds</label>
+                    <input type="checkbox" name="pounds" id="pounds">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br>
+                    <div>Describe your athletic ability:</div>
+                    <br>
+                    <textarea name="ability" id="ability" cols="30" rows="3" placeholder="None"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Enter My Information</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
